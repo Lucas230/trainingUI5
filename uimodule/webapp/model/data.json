@@ -1,0 +1,76 @@
+{
+    "name":"Lucas Pires",
+    "email":"test@test.com",
+    "designation":"Developer",
+    "phone":"+5514990001231",
+    "currentCompany":"L4E",
+    "education":[
+        {
+            "type":"Ensinio Médio",
+            "per":"75%",
+            "year":"2018"
+        },
+        {
+            "type":"Fatec",
+            "per":"65%",
+            "year":"2022"
+        },
+        {
+            "type":"Post graduation",
+            "per":"65%",
+            "year":"2023"
+        }
+    ],
+    "certification":[
+        {
+            "name":"SAP ABAP",
+            "year":"2021"
+        },
+        {
+            "name":"SAPUI5",
+            "year":"2021"
+        },
+        {
+            "name":"SAP CLoud",
+            "year":"2021"
+        }
+    ],
+    "employment":[
+        {  
+            "name":"L4E",
+            "projects":[
+                {
+                    "name":"App Feedback",
+                    "type":"Development"
+                },
+                {
+                    "name":"App Onboarding e Candidato",
+                    "type":"Development"
+                }
+            ]
+        },
+        {  
+            "name":"Strong",
+            "projects":[
+                {
+                    "name":"BRF",
+                    "type":"Implementation1",
+                    "projects":[
+                        {
+                            "name":"FICO Rconcillation",
+                            "type":"Report"
+                        },
+                        {
+                            "name":"Track and Trace",
+                            "type":"Report Dashboard"
+                        }
+                    ]
+                },
+                {
+                    "name":"Project4",
+                    "type":"Support1"
+                }
+              ]
+        }
+    ]
+}

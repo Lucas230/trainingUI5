@@ -1,0 +1,23 @@
+ <mvc:View controllerName="com.lp.trainingUI5.controller.cards.Cards"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:l="sap.ui.layout">
+
+<Page id="idAppControl" title="Weather Cards" showNavButton="true" navButtonPress="onNavBack">
+    <content>
+        <VBox id="vbox" class="sapUiSmallMargin">
+            <Label labelFor="rgb3" text="Choose Weather Forecast" />
+            <l:HorizontalLayout class="sapUiContentPadding">
+                <RadioButtonGroup id="rgb3" columns="5" valueState="Success" select="onSelectingWeatherOption" class="sapUiMediumMarginBottom">
+                    <RadioButton id="Current" text="Current Object Card" />
+                    <RadioButton id="Minutely" text="Hourly List Card"/>
+                    <RadioButton id="Hourly" text="Hourly Table Card"/>
+                    <RadioButton id="Daily" text="Hourly Analytical Card"/>
+                </RadioButtonGroup>
+
+            </l:HorizontalLayout>
+        </VBox>
+    </content>
+</Page>
+</mvc:View>

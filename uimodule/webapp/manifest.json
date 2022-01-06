@@ -29,7 +29,7 @@
   "sap.ui5": {
     "flexEnabled": true,
     "rootView": {
-      "viewName": "com.lp.trainingUI5.view.MainView",
+      "viewName": "com.lp.trainingUI5.view.App",
       "type": "XML",
       "async": true,
       "id": "idAppControl"
@@ -72,17 +72,113 @@
       },
       "routes": [
         {
-          "name": "RouteMainView",
-          "pattern": "RouteMainView",
-          "target": ["TargetMainView"]
+          "name": "RouteApp",
+          "pattern": "RouteApp",
+          "target": ["TargetApp"]
+        },
+        {
+          "name": "Tiles",
+          "pattern": "",
+          "target": ["Tiles"]
+        },
+        {
+          "name": "first",
+          "pattern": "first",
+          "target": ["Countdown"]
+        },
+        {
+          "name": "second",
+          "pattern": "second",
+          "target": ["Covid"]
+        },
+        {
+          "name": "second-list",
+          "pattern": "second-list",
+          "target": ["Covid-List"]
+        },
+        {
+          "name": "second-pie",
+          "pattern": "second-pie",
+          "target": ["Covid-Pie"]
+        },
+        {
+          "name": "third",
+          "pattern": "third",
+          "target": ["Vacc"]
+        },
+        {
+          "name": "cards",
+          "pattern": "cards",
+          "target": ["Cards"]
+        },
+        {
+          "name": "portfolio",
+          "pattern": "portfolio",
+          "target": ["Portfolio"]
         }
       ],
       "targets": {
-        "TargetMainView": {
+        "TargetApp": {
           "viewType": "XML",
           "viewLevel": 1,
           "viewId": "idAppControl",
-          "viewName": "MainView"
+          "viewName": "App"
+        },
+        "Tiles": {
+          "viewType": "XML",
+          "viewId": "Tiles",
+          "viewLevel": 1,
+          "viewName": "Tiles",
+          "controlId": "idAppControl"
+        },
+        "Countdown": {
+          "viewType": "XML",
+          "viewId": "countdown.Countdown",
+          "viewLevel": 1,
+          "viewName": "countdown.Countdown",
+          "controlId": "idAppControl"
+        },
+        "Covid": {
+          "viewType": "XML",
+          "viewId": "covid.Covid",
+          "viewLevel": 1,
+          "viewName": "covid.Covid",
+          "controlId": "idAppControl"
+        },
+        "Covid-List": {
+          "viewType": "XML",
+          "viewId": "covid.List",
+          "viewLevel": 1,
+          "viewName": "covid.List",
+          "controlId": "idAppControl"
+        },
+        "Covid-Pie": {
+          "viewType": "XML",
+          "viewId": "covid.Pie",
+          "viewLevel": 1,
+          "viewName": "covid.Pie",
+          "controlId": "idAppControl"
+        },
+        "Vacc": {
+          "viewType": "XML",
+          "viewId": "vacc.Vacc",
+          "viewLevel": 1,
+          "viewName": "vacc.Vacc",
+          "controlId": "idAppControl"
+        },
+        "Cards": {
+          "viewType": "XML",
+          "viewId": "cards.Cards",
+          "viewLevel": 1,
+          "viewName": "cards.Cards",
+          "controlId": "idAppControl"
+        },
+        "Portfolio": {
+          "viewType": "XML",
+          "viewId": "portfolio.Portfolio",
+          "viewLevel": 1,
+          "viewName": "portfolio.Portfolio",
+          "controlId": "idAppControl"
         }
       }
     }

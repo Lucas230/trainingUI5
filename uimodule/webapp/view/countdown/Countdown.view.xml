@@ -1,0 +1,41 @@
+ <mvc:View controllerName="com.lp.trainingUI5.controller.countdown.Countdown"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:grid="sap.ui.layout.cssgrid">
+
+  <Page id="countdown.Countdown" showNavButton="true" navButtonPress="onNavBack">
+    <grid:CSSGrid
+        id="grid1"
+        gridTemplateColumns="1fr"
+        gridGap="1rem">
+        <Image src="https://seeklogo.com/images/S/SAP-logo-C3BDE759DB-seeklogo.com.png"/>
+        <grid:CSSGrid
+            id="grid2"
+            gridTemplateColumns="1fr 1fr 1fr 1fr"
+            gridGap="1rem">
+            
+            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Days">
+              <TileContent >
+                <NumericContent value="{timer>/days}" valueColor="Error" withMargin="false" />
+              </TileContent>
+            </GenericTile>
+            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Hours">
+              <TileContent >
+                <NumericContent value="{timer>/hours}" valueColor="Critical" withMargin="false" />
+              </TileContent>
+            </GenericTile>
+            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Minutes">
+              <TileContent >
+                <NumericContent value="{timer>/minutes}" valueColor="Good" withMargin="false" />
+              </TileContent>
+            </GenericTile>
+            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Seconds">
+              <TileContent >
+                <NumericContent value="{timer>/seconds}" withMargin="false" />
+              </TileContent>
+            </GenericTile>
+        </grid:CSSGrid>
+    </grid:CSSGrid>
+  </Page>
+</mvc:View>

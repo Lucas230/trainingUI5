@@ -1,0 +1,32 @@
+[
+    {
+        "title" : "SAP Teached 2020 Countdown",
+        "route": "first"
+    },
+    {
+        "title" : "Covid 19",
+        "route" : "second"
+    },
+    {
+        "title" : "Vaccination Tracker",
+        "route" : "third"
+    },
+    {
+        "title" : "Pollution Tracker",
+        "route" : "EXT-third",
+        "url" : "https://c9d86d63trial-dev2lucas230-dev230-pollutiontracker.cfapps.eu10.hana.ondemand.com/"
+    },
+    {
+        "title" : "Weather Cards",
+        "route" : "cards"
+    },
+    {
+        "title" : "My Portfolio",
+        "route" : "portfolio"
+    },
+    {
+        "title" : "Search Duck IRPA",
+        "route" : "EXT-searchDuck",
+        "url" : "https://dev2lucas230.launchpad.cfapps.eu10.hana.ondemand.com/4b97905c-c452-4262-9a0f-e5a3139afd8e.searchDuckservice.irpastartersearchDuck-1.0.0/index.html"
+    }
+]

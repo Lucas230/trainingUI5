@@ -4,7 +4,7 @@ sap.ui.require([
 ], function (Opa5, Press) {
   "use strict";
 
-  var sViewName = "com.lp.trainingUI5.view.MainView";
+  var sViewName = "com.lp.trainingUI5.view.App";
 
   Opa5.createPageObjects({
     onTheMainPage: {

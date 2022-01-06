@@ -1,0 +1,20 @@
+ <mvc:View controllerName="com.lp.trainingUI5.controller.covid.List"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc">
+
+  <Page id="covid.List" showNavButton="true" navButtonPress="onNavBack">
+    <List
+		id="myList"
+		headerText="Total Cases: {Latest>/data/summary/total}"
+        footerText="Latest Covid Count"
+		items="{Latest>/data/regional}">
+		<items>
+			<StandardListItem
+				title="{Latest>loc}"
+				description="Total Cases: {Latest>totalConfirmed}"
+				info="Deaths: {Latest>deaths}"/>
+		</items>
+	</List>
+  </Page>
+</mvc:View>
