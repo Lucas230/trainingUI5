@@ -64,6 +64,13 @@ sap.ui.define(
                 } else {
                     this.getRouter().navTo("Tiles", {}, true /*no history*/);
                 }
+            },
+
+            getBaseURL: function () {
+                let appId = this.getOwnerComponent().getManifestEntry("/sap.app/id");
+                let appPath = appId.replaceAll(".", "/");
+                let appModulePath = jQuery.sap.getModulePath(appPath);
+                return appModulePath;
             }
         });
     }

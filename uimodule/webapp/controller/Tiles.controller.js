@@ -9,7 +9,7 @@ sap.ui.define([
 
     return Controller.extend("com.lp.trainingUI5.controller.Tiles", {
         onInit: function(){
-            let myTilesModel = new JSONModel("../model/tiles.json");
+            let myTilesModel = new JSONModel(this.getBaseURL() + "/model/tiles.json");
             this.getView().setModel(myTilesModel, "tiles");
         },
 

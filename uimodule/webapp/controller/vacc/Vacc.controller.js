@@ -12,7 +12,7 @@ sap.ui.define([
 
         return Controller.extend("com.lp.trainingUI5.controller.vacc.Vacc", {
 			onInit: function() {
-				let oVaccModel = new JSONModel("../model/vacc.json");
+				let oVaccModel = new JSONModel(this.getBaseURL() + "/model/vacc.json");
 				this.getView().setModel(oVaccModel, "vacc");
 				let myViewModel = {
 					table : true,

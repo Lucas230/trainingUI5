@@ -10,7 +10,7 @@ function (
 
     return Controller.extend("com.lp.trainingUI5.controller.portfolio.Portfolio", {
         onInit:function(){
-            let oModel = new JSONModel("../model/data.json");
+            let oModel = new JSONModel(this.getBaseURL() + "/model/data.json");
             this.setModel(oModel, "portfolio");
         }
     });
